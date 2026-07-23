@@ -1,0 +1,1 @@
+gcc -Wall -pedantic -Wextra -Werror -I./include src/configuracao.c src/interface.c src/jogo.c src/main.c src/palavras.c src/ranking.c src/conio_v3.2.4.c src/console_v1.5.5.c src/graphics_v1.1.c -o main -lgdi32 
