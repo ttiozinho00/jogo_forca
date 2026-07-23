@@ -20,7 +20,19 @@ Um jogo da forca desenvolvido em **C**, executado em ambiente de console. O obje
 
 - Linguagem C
 - GCC
+- MinGW 4.7.2
 - Biblioteca GDI32 (Windows)
+
+---
+
+## Requisitos
+
+- **Sistema Operacional:** Windows
+- **Compilador:** MinGW GCC 4.7.2
+- **Codificação do Console:** OEM 850 (CP850)
+- Biblioteca **GDI32**
+
+> **Importante:** Para que os caracteres acentuados sejam exibidos corretamente no console do Windows, utilize a codificação **OEM 850 (CP850)**.
 
 ---
 
@@ -69,16 +81,15 @@ src/graphics_v1.1.c \
 
 Após a compilação, execute:
 
-### Windows
-
 ```bash
 main.exe
 ```
 
-### Linux (caso adaptado)
+Caso o console não esteja utilizando a codificação OEM 850, execute antes:
 
-```bash
-./main
+```cmd
+chcp 850
+main.exe
 ```
 
 ---
