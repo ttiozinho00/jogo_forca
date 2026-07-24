@@ -1,177 +1,366 @@
-MELANCIA;Fruta;Verde por fora e vermelha por dentro;
-ELEFANTE;Animal;Maior mamifero terrestre;
-BRASIL;Pais;Maior pais da America do Sul;
-ABACAXI;Fruta;Tem coroa mas nao e rei;
-COMPUTADOR;Tecnologia;Processa dados;
-ASTRONAUTA;Profissao;Viaja para o espaco;
-GIRASSOL;Planta;Sempre vira para a luz;
-GOLFINHO;Animal;Mamifero aquatico muito inteligente;
-BANANA;Fruta;Amarela e rica em potassio;
-LEAO;Animal;Conhecido como rei da selva;
-CARRO;Transporte;Possui quatro rodas;
-LIVRO;Objeto;Possui paginas para leitura;
-PIZZA;Comida;Muito famosa na Italia;
-LAPIS;Material Escolar;Usado para escrever;
-GATO;Animal;Adora perseguir ratos;
-CACHORRO;Animal;Melhor amigo do homem;
-AVIÃO;Transporte;Voa pelos ceus;
-BOLA;Esporte;Usada em varias modalidades;
-SOL;Astronomia;Ilumina a Terra durante o dia;
-LUA;Astronomia;Satelite natural da Terra;
-CAMALEAO;Animal;Muda de cor para se camuflar;
-TARTARUGA;Animal;Carrega a casa nas costas;
-MICROSCOPIO;Ciencia;Permite observar objetos minusculos;
-HELICOPTERO;Transporte;Pode decolar na vertical;
-ARCOIRIS;Natureza;Surge quando ha sol e chuva;
-PINGUIM;Animal;Ave que nao voa;
-BIBLIOTECA;Lugar;Empresta livros ao publico;
-RELAMPAGO;Natureza;Aparece durante tempestades;
-JACARE;Animal;Reptil encontrado em rios;
-CANGURU;Animal;Possui bolsa para carregar o filhote;
-VULCAO;Natureza;Pode expelir lava;
-BUSSOLA;Instrumento;Indica o norte;
-FAROL;Construcao;Guia embarcacoes;
-POLVO;Animal;Possui oito tentaculos;
-VIOLINO;Instrumento;Tocado com arco;
-ENGRENAGEM;Mecanica;Transmite movimento;
-ESMERALDA;Mineral;Pedra preciosa verde;
-TERMOMETRO;Instrumento;Mede temperatura;
-PANTERA;Animal;Felino de grande porte;
-SATELITE;Tecnologia;Orbita um planeta;
-ORNITORRINCO;Animal;Mamifero que bota ovos;
-METAMORFOSE;Biologia;Transformacao de alguns animais;
-FOTOSSINTESE;Biologia;Processo que produz alimento nas plantas;
-CONSTELACAO;Astronomia;Conjunto aparente de estrelas;
-BUMERANGUE;Objeto;Pode voltar ao ponto de origem;
-ESTALACTITE;Geologia;Forma-se no teto das cavernas;
-HIPOPOTAMO;Animal;Grande mamifero africano;
-TELESCOPIO;Astronomia;Observa objetos distantes;
-PARALELEPIPEDO;Geometria;Solido com seis faces;
-ECLIPSE;Astronomia;Ocultacao parcial ou total de um astro;
-ANFIBIO;Biologia;Vive na agua e na terra;
-CATAPULTA;Historia;Maquina usada para lancar projeteis;
-LABIRINTO;Estrutura;Possui varios caminhos e apenas uma saida;
-PTERODACTILO;Pre-Historia;Reptil voador extinto;
-CALIDOSCOPIO;Objeto;Cria desenhos coloridos com espelhos;
-MANDRAGORA;Planta;Conhecida em lendas e mitologia;
-CRIPTOGRAFIA;Tecnologia;Protege informacoes por meio de codigos;
-BIORREMEDIACAO;Ciencia;Uso de organismos para descontaminacao;
-HEMISFERIO;Geografia;Metade de uma esfera terrestre;
-EQUINOCIO;Astronomia;Dia e noite com duracao semelhante;
-MORANGO;Fruta;Pequena fruta vermelha;
-LARANJA;Fruta;Rica em vitamina C;
-UVA;Fruta;Usada para fazer vinho;
-MACA;Fruta;Caiu na historia de Newton;
-PERA;Fruta;Tem formato alongado;
-MANGA;Fruta;Muito doce e tropical;
-COELHO;Animal;Gosta de cenouras;
-TIGRE;Animal;Felino com listras;
-URSO;Animal;Gosta de mel;
-ZEBRA;Animal;Possui listras pretas e brancas;
-CAVALO;Animal;Muito usado para montaria;
-GALINHA;Animal;Bota ovos;
-BORBOLETA;Inseto;Passa por metamorfose;
-ABELHA;Inseto;Produz mel;
-FORMIGA;Inseto;Vive em colonia;
-FOGAO;Eletrodomestico;Usado para cozinhar;
-GELADEIRA;Eletrodomestico;Mantem alimentos gelados;
-TELEVISAO;Eletronico;Exibe imagens e sons;
-RELOGIO;Objeto;Marca as horas;
-CADEIRA;Movel;Serve para sentar;
-CACHORRO;Animal;O melhor amigo do homem;
-GATO;Animal;Felino domestico;
-BANANA;Fruta;Amarela e rica em potassio;
-MAMAO;Fruta;Tem muitas sementes pretas;
-SAPATO;Vestuario;Usado nos pes;
-CAMISA;Vestuario;Roupa para a parte superior do corpo;
-CARRO;Veiculo;Possui quatro rodas;
-AVIAO;Veiculo;Meio de transporte aereo;
-MESA;Movel;Usada para fazer as refeicoes;
-CAMA;Movel;Lugar para dormir;
-FUTEBOL;Esportes;Jogado com os pes e uma bola;
-BASQUETE;Esportes;O objetivo e acertar a cesta;
-NATACAO;Esportes;Praticado na agua;
-ROMA;Historia;Antigo imperio com gladiadores;
-EGITO;Historia;Famoso por suas piramides e faraos;
-CABRAL;Historia;Descobriu o Brasil em 1500;
-BATMAN;Cultura Pop;Heroi de Gotham City;
-HOGWARTS;Cultura Pop;Escola de magia do Harry Potter;
-PIKACHU;Cultura Pop;Pokemon amarelo que solta raios;
-JABUTICABA;Fruta;Nasce diretamente no tronco;
-OURICO;Animal;Possui muitos espinhos;
-CASTOR;Animal;Constroi represas;
-LONTRA;Animal;Excelente nadadora;
-TUCANO;Ave;Tem bico muito grande;
-FENECO;Animal;Raposa de grandes orelhas;
-BAMBU;Planta;Cresce muito rapidamente;
-CACTO;Planta;Armazena agua;
-OASIS;Geografia;Area verde no deserto;
-GLACIAR;Natureza;Grande massa de gelo;
-TSUNAMI;Natureza;Grande onda causada por terremotos;
-TORNADO;Natureza;Coluna de vento muito intensa;
-SEMAFORO;Transito;Controla o fluxo de veiculos;
-BINOCULO;Instrumento;Aproxima objetos distantes;
-AMPULHETA;Objeto;Marca o tempo com areia;
-CATAVENTO;Objeto;Gira com o vento;
-CHAMELEIRA;Ferramenta;Usada para mover lenha na lareira;
-BALEIA;Animal;Maior mamifero do planeta;
-CORAL;Natureza;Forma recifes no mar;
-MANGUE;Ecossistema;Encontro do rio com o mar;
-GIRAFA;Animal;Possui um pescoco muito longo;
-ORQUIDEA;Planta;Flor muito apreciada em vasos;
-VULCAO;Natureza;Pode expelir lava;
-DESERTO;Geografia;Regiao muito seca e com areia;
-SUBMARINO;Veiculo;Navega debaixo da agua;
-TELESCOPIO;Instrumento;Usado para observar as estrelas;
-BRUXA;Ficcao;Voa em uma vassoura;
-PIRAMIDE;Monumento;Construcao do antigo Egito;
-XADREZ;Jogo;Possui pecas como rei e rainha;
-BUSSOLA;Instrumento;Aponta sempre para o norte;
-ESGRIMA;Esportes;Usa espadas como florete ou sabre;
-CURLING;Esportes;Jogado no gelo com pedras e vassouras;
-ATLETISMO;Esportes;Inclui corridas e saltos;
-CRUZADAS;Historia;Expedicoes religiosas na Idade Media;
-RENASCIMENTO;Historia;Movimento cultural e artistico europeu;
-FEUDALISMO;Historia;Sistema politico da Idade Media;
-AVATAR;Cultura Pop;Filme com alienigenas azuis de Pandora;
-MATRIX;Cultura Pop;Filme onde a realidade e uma simulacao;
-VOLDEMORT;Cultura Pop;O vilao que nao deve ser nomeado;
-AXOLOTE;Animal;Anfibio que regenera membros;
-QUASAR;Astronomia;Objeto extremamente luminoso;
-NEBULOSA;Astronomia;Nuvem de gas e poeira;
-ISOTOPO;Quimica;Atomos com mesmo numero atomico;
-TAQUION;Fisica;Particula hipotetica;
-BIOLUMINESCENCIA;Biologia;Capacidade de emitir luz;
-EQUINOXIO;Astronomia;Dia e noite quase iguais;
-SOLSTICIO;Astronomia;Marca inicio do verao ou inverno;
-MANGANES;Quimica;Elemento quimico metalico;
-ESTRATOSFERA;Atmosfera;Camada onde fica a camada de ozonio;
-ORNITOLOGIA;Ciencia;Estudo das aves;
-PALEONTOLOGIA;Ciencia;Estudo dos fosseis;
-CRIPTONITA;Ficcao;Fraqueza do Superman;
-HIDROFOBICO;Quimica;Repele agua;
-PARADOXO;Filosofia;Parece contraditorio mas pode ser verdadeiro;
-ANTIMATERIA;Fisica;Possui cargas opostas a materia comum;
-CALEIDOSCOPIO;Objeto;Forma imagens simetricas coloridas;
-HEXAGONO;Geometria;Poligono com seis lados;
-ARQUEOLOGIA;Ciencia;Estuda civilizacoes antigas;
-FILOXERA;Biologia;Inseto que ataca videiras;
-ORNITORRINCO;Animal;Mamifero que bota ovos;
-BURACO NEGRO;Astronomia;Regiao onde a gravidade atrai tudo;
-FOTOSSINTESE;Biologia;Processo de nutricao das plantas;
-TERMODINAMICA;Fisica;Estudo das relacoes entre calor e trabalho;
-POLIMERO;Quimica;Macromolecula formada por monomeros;
-METEORITO;Astronomia;Fragmento espacial que atinge a Terra;
-EPICENTRO;Geologia;Ponto na superficie acima de um terremoto;
-CRIPTOGRAFIA;Tecnologia;Arte de escrever em codigos;
-ESTALACTITE;Geologia;Formacao rochosa no teto de cavernas;
-MITOCONDRIA;Biologia;Organela que produz energia para a celula;
-DECATLO;Esportes;Competicao com dez provas;
-SKELETON;Esportes;Descida de treno de cabeca para baixo;
-KITESURF;Esportes;Usa uma pipa e uma prancha na agua;
-MESOPOTAMIA;Historia;Regiao entre os rios Tigre e Eufrates;
-ILUMINISMO;Historia;Movimento intelectual do seculo dezoito;
-HELENISMO;Historia;Mistura da cultura grega com oriental;
-TARDIS;Cultura Pop;Nave espacial e temporal do Doctor Who;
-MANDALORIANO;Cultura Pop;Cacador de recompensas de Star Wars;
-CYBERPUNK;Cultura Pop;Subgenero de ficcao cientifica futurista;
+ABELHA;Inseto;Produz mel;FACIL
+AGUA;Bebida;Essencial para a vida;FACIL
+AMOR;Sentimento;Oposto de odio;FACIL
+ANEL;Objeto;Joia de dedo;FACIL
+ARVORE;Natureza;Planta com tronco;FACIL
+AVIAO;Transporte;Voa pelos ceus;FACIL
+BALAO;Objeto;Enche com ar e voa;FACIL
+BALEIA;Animal;Maior mamifero do planeta;FACIL
+BAMBU;Planta;Cresce muito rapidamente;FACIL
+BANANA;Fruta;Amarela e rica em potassio;FACIL
+BARCO;Transporte;Navega na agua;FACIL
+BATMAN;Cultura Pop;Heroi de Gotham City;FACIL
+BISCOITO;Comida;Lanche crocante;FACIL
+BODE;Animal;Macho da cabra;FACIL
+BOLA;Esporte;Usada em varias modalidades;FACIL
+BOLO;Comida;Doce servido em aniversarios;FACIL
+BONECA;Brinquedo;Forma humana;FACIL
+BOTA;Vestuario;Calcado fechado;FACIL
+BRASIL;Pais;Maior pais da America do Sul;FACIL
+BRUXA;Ficcao;Voa em uma vassoura;FACIL
+CACTO;Planta;Armazena agua;FACIL
+CAFE;Bebida;Liquido escuro que da energia;FACIL
+CAIXA;Objeto;Serve para guardar coisas;FACIL
+CAMA;Movel;Lugar para dormir;FACIL
+CAMISA;Vestuario;Roupa para a parte superior do corpo;FACIL
+CANETA;Objeto;Usada para escrever com tinta;FACIL
+CARNE;Comida;Alimento de origem animal;FACIL
+CARRO;Transporte;Possui quatro rodas;FACIL
+CASA;Construcao;Lugar onde moramos;FACIL
+CAVALO;Animal;Muito usado para montaria;FACIL
+CHAVE;Objeto;Abre portas;FACIL
+CHUVA;Natureza;Agua que cai do ceu;FACIL
+COBRA;Animal;Reptil rastejante sem patas;FACIL
+COELHO;Animal;Gosta de cenouras;FACIL
+COPO;Objeto;Usado para beber agua;FACIL
+CORAL;Natureza;Forma recifes no mar;FACIL
+CORDA;Objeto;Usada para amarrar;FACIL
+DADO;Objeto;Possui seis faces numeradas;FACIL
+DAMA;Jogo;Jogado em um tabuleiro quadriculado;FACIL
+DEDO;Anatomia;Parte da mao ou pe;FACIL
+DENTE;Anatomia;Fica na boca e serve para mastigar;FACIL
+DIA;Tempo;Oposto de noite;FACIL
+DOCE;Comida;Oposto de salgado;FACIL
+EGITO;Historia;Famoso por suas piramides e faraos;FACIL
+ESCOVA;Objeto;Usada para pentear ou limpar;FACIL
+FACA;Objeto;Serve para cortar;FACIL
+FADA;Ficcao;Criatura magica com asas;FACIL
+FAROL;Construcao;Guia embarcacoes;FACIL
+FIO;Objeto;Usado para costurar ou conduzir energia;FACIL
+FITA;Objeto;Usada para amarrar ou decorar;FACIL
+FOGAO;Eletrodomestico;Usado para cozinhar;FACIL
+FOGO;Natureza;Produz calor e luz;FACIL
+FOLHA;Planta;Parte verde da arvore;FACIL
+FOTO;Objeto;Imagem capturada;FACIL
+GATO;Animal;Adora perseguir ratos;FACIL
+GELO;Natureza;Agua em estado solido;FACIL
+GIRAFA;Animal;Possui um pescoco muito longo;FACIL
+GIZ;Material Escolar;Usado para escrever na lousa;FACIL
+GOTA;Natureza;Pequena porcao de liquido;FACIL
+ILHA;Geografia;Porcao de terra cercada por agua;FACIL
+JACARE;Animal;Reptil encontrado em rios;FACIL
+JOGO;Entretenimento;Pode ser de tabuleiro ou video;FACIL
+LAPIS;Material Escolar;Usado para escrever;FACIL
+LEAO;Animal;Conhecido como rei da selva;FACIL
+LEITE;Bebida;Produzido pela vaca;FACIL
+LIMAO;Fruta;Verde e azedo;FACIL
+LIVRO;Objeto;Possui paginas para leitura;FACIL
+LIXO;Objeto;O que e descartado;FACIL
+LOBO;Animal;Uiva para a lua;FACIL
+LUA;Astronomia;Satelite natural da Terra;FACIL
+MACA;Fruta;Caiu na historia de Newton;FACIL
+MACACO;Animal;Gosta de bananas e pula em arvores;FACIL
+MALA;Objeto;Usada para levar roupas em viagens;FACIL
+MAMAO;Fruta;Tem muitas sementes pretas;FACIL
+MANGA;Fruta;Muito doce e tropical;FACIL
+MANGUE;Ecossistema;Encontro do rio com o mar;FACIL
+MAPA;Objeto;Mostra caminhos e lugares;FACIL
+MATO;Natureza;Vegetacao rasteira;FACIL
+MEIA;Vestuario;Colocada antes do sapato;FACIL
+MESA;Movel;Usada para fazer as refeicoes;FACIL
+MILHO;Comida;Amarelo e usado para fazer pipoca;FACIL
+MOLA;Objeto;Pode encolher e esticar;FACIL
+MURO;Construcao;Parede externa;FACIL
+NEVE;Natureza;Precipitacao de cristais de gelo;FACIL
+NUVEM;Natureza;Massa branca no ceu;FACIL
+OASIS;Geografia;Area verde no deserto;FACIL
+OLHO;Anatomia;Orgao da visao;FACIL
+ONCA;Animal;Felino brasileiro;FACIL
+OURO;Mineral;Metal precioso amarelo;FACIL
+OVO;Comida;Botado pela galinha;FACIL
+PANO;Objeto;Pedaco de tecido;FACIL
+PATO;Animal;Ave que faz qua-qua;FACIL
+PEDRA;Natureza;Rocha dura;FACIL
+PEIXE;Animal;Vive e respira na agua;FACIL
+PERA;Fruta;Tem formato alongado;FACIL
+PIAO;Brinquedo;Roda no chao com um barbante;FACIL
+PIPA;Brinquedo;Voa com o vento e tem rabiola;FACIL
+PIZZA;Comida;Muito famosa na Italia;FACIL
+POLVO;Animal;Possui oito tentaculos;FACIL
+POTE;Objeto;Usado para guardar mantimentos;FACIL
+RATO;Animal;Roedor que adora queijo;FACIL
+REDE;Objeto;Usada para pescar ou dormir;FACIL
+RODA;Objeto;Faz o carro andar;FACIL
+ROMA;Historia;Antigo imperio com gladiadores;FACIL
+ROSTO;Anatomia;Onde ficam os olhos e a boca;FACIL
+RUA;Caminho;Onde passam os veiculos;FACIL
+SAPATO;Vestuario;Usado nos pes;FACIL
+SAPO;Animal;Anfibio que salta e coaxa;FACIL
+SINO;Objeto;Faz barulho badalando;FACIL
+SOFA;Movel;Usado para sentar na sala;FACIL
+SOL;Astronomia;Ilumina a Terra durante o dia;FACIL
+SUCO;Bebida;Feito de frutas;FACIL
+TIGRE;Animal;Felino com listras;FACIL
+TREM;Transporte;Anda sobre trilhos;FACIL
+TUCANO;Ave;Tem bico muito grande;FACIL
+URSO;Animal;Gosta de mel;FACIL
+UVA;Fruta;Usada para fazer vinho;FACIL
+VACA;Animal;Produz leite;FACIL
+VENTO;Natureza;Ar em movimento;FACIL
+VULCAO;Natureza;Pode expelir lava;FACIL
+ZEBRA;Animal;Possui listras pretas e brancas;FACIL
+ZERO;Matematica;Numero que indica ausencia;FACIL
+ABACATE;Fruta;Verde com grande caroco;MEDIO
+ABACAXI;Fruta;Tem coroa mas nao e rei;MEDIO
+ACAMPAMENTO;Lazer;Dormir em barracas;MEDIO
+AGULHA;Objeto;Usada para costurar;MEDIO
+ALHO;Comida;Tempero forte;MEDIO
+ALMOFADA;Objeto;Traz conforto no sofa ou cama;MEDIO
+AMENDOIM;Comida;Usado para fazer pacoca;MEDIO
+AMPULHETA;Objeto;Marca o tempo com areia;MEDIO
+ANFIBIO;Biologia;Vive na agua e na terra;MEDIO
+ARCOIRIS;Natureza;Surge quando ha sol e chuva;MEDIO
+ATLETISMO;Esportes;Inclui corridas e saltos;MEDIO
+AVATAR;Cultura Pop;Filme com alienigenas azuis de Pandora;MEDIO
+BASQUETE;Esportes;O objetivo e acertar a cesta;MEDIO
+BATERIA;Instrumento;Conjunto de tambores e pratos;MEDIO
+BENGALA;Objeto;Apoio para caminhar;MEDIO
+BINOCULO;Instrumento;Aproxima objetos distantes;MEDIO
+BOLACHA;Comida;Parece o biscoito;MEDIO
+BORBOLETA;Inseto;Passa por metamorfose;MEDIO
+BUSSOLA;Instrumento;Indica o norte;MEDIO
+CABRAL;Historia;Descobriu o Brasil em 1500;MEDIO
+CACHORRO;Animal;Melhor amigo do homem;MEDIO
+CADEIRA;Movel;Serve para sentar;MEDIO
+CADERNO;Material Escolar;Onde os alunos anotam as aulas;MEDIO
+CAMALEAO;Animal;Muda de cor para se camuflar;MEDIO
+CANGURU;Animal;Possui bolsa para carregar o filhote;MEDIO
+CARANGUEJO;Animal;Anda de lado na praia;MEDIO
+CASTELO;Construcao;Moradia de reis;MEDIO
+CASTOR;Animal;Constroi represas;MEDIO
+CATAPULTA;Historia;Maquina usada para lancar projeteis;MEDIO
+CATAVENTO;Objeto;Gira com o vento;MEDIO
+CENOURA;Comida;Raiz laranja preferida do coelho;MEDIO
+CEREBRO;Anatomia;Orgao que pensa;MEDIO
+CHALEIRA;Objeto;Ferve agua;MEDIO
+CHAMINE;Construcao;Por onde sai a fumaca;MEDIO
+CHOCOLATE;Comida;Doce feito de cacau;MEDIO
+COBERTOR;Objeto;Esquenta no frio;MEDIO
+COMPUTADOR;Tecnologia;Processa dados;MEDIO
+CORACAO;Anatomia;Bombeia o sangue;MEDIO
+CORTINA;Objeto;Cobre a janela;MEDIO
+CRUZADAS;Historia;Expedicoes religiosas na Idade Media;MEDIO
+DESERTO;Geografia;Regiao muito seca e com areia;MEDIO
+DIAMANTE;Mineral;Pedra preciosa transparente;MEDIO
+DINHEIRO;Objeto;Usado para comprar coisas;MEDIO
+DINOSSAURO;Pre-Historia;Reptil gigante extinto;MEDIO
+ECLIPSE;Astronomia;Ocultacao parcial ou total de um astro;MEDIO
+ELEFANTE;Animal;Maior mamifero terrestre;MEDIO
+ESCADA;Objeto;Usada para subir;MEDIO
+ESGRIMA;Esportes;Usa espadas como florete ou sabre;MEDIO
+ESMERALDA;Mineral;Pedra preciosa verde;MEDIO
+ESPADA;Objeto;Arma cortante antiga;MEDIO
+ESPELHO;Objeto;Reflete a imagem de quem o olha;MEDIO
+ESTRELA;Astronomia;Brilha no ceu noturno;MEDIO
+FANTASMA;Ficcao;Espirito de alguem que ja morreu;MEDIO
+FERRO;Mineral;Metal muito resistente;MEDIO
+FOGUETE;Veiculo;Viaja para o espaco;MEDIO
+FORMIGA;Inseto;Vive em colonia;MEDIO
+FUTEBOL;Esportes;Jogado com os pes e uma bola;MEDIO
+GAIVOTA;Ave;Passaro comum em praias;MEDIO
+GALINHA;Animal;Bota ovos;MEDIO
+GARRAFA;Objeto;Guarda liquidos;MEDIO
+GELADEIRA;Eletrodomestico;Mantem alimentos gelados;MEDIO
+GIRASSOL;Planta;Sempre vira para a luz;MEDIO
+GLACIAR;Natureza;Grande massa de gelo;MEDIO
+GOLFINHO;Animal;Mamifero aquatico muito inteligente;MEDIO
+GUITARRA;Instrumento;Essencial em bandas de rock;MEDIO
+HEXAGONO;Geometria;Poligono com seis lados;MEDIO
+HOGWARTS;Cultura Pop;Escola de magia do Harry Potter;MEDIO
+HOSPITAL;Construcao;Lugar onde se tratam doentes;MEDIO
+INVERNO;Estacao;Epoca mais fria do ano;MEDIO
+JOANINHA;Inseto;Pequeno besouro vermelho com pintas;MEDIO
+LABIRINTO;Estrutura;Possui varios caminhos e apenas uma saida;MEDIO
+LARANJA;Fruta;Rica em vitamina C;MEDIO
+LONTRA;Animal;Excelente nadadora;MEDIO
+MARTELO;Ferramenta;Bate em pregos;MEDIO
+MATRIX;Cultura Pop;Filme onde a realidade e uma simulacao;MEDIO
+MELANCIA;Fruta;Verde por fora e vermelha por dentro;MEDIO
+MOCHILA;Acessorio;Usada nas costas para carregar objetos;MEDIO
+MOEDA;Objeto;Dinheiro de metal;MEDIO
+MONTANHA;Geografia;Grande elevacao de terra;MEDIO
+MORANGO;Fruta;Pequena fruta vermelha;MEDIO
+NATACAO;Esportes;Praticado na agua;MEDIO
+NEBULOSA;Astronomia;Nuvem de gas e poeira;MEDIO
+NOVELO;Objeto;Bola feita de fios de la;MEDIO
+OCEANO;Geografia;Grande extensao de agua salgada;MEDIO
+ORQUESTRA;Musica;Grande grupo de musicos e instrumentos;MEDIO
+ORQUIDEA;Planta;Flor muito apreciada em vasos;MEDIO
+OURICO;Animal;Possui muitos espinhos;MEDIO
+PALHACO;Profissao;Faz as pessoas rirem no circo;MEDIO
+PANELA;Objeto;Usada no fogao para cozinhar;MEDIO
+PANTERA;Animal;Felino de grande porte;MEDIO
+PAPAGAIO;Ave;Passaro que imita vozes;MEDIO
+PARQUE;Lugar;Area verde para lazer;MEDIO
+PIKACHU;Cultura Pop;Pokemon amarelo que solta raios;MEDIO
+PINGENTE;Objeto;Enfeite de colar;MEDIO
+PINGUIM;Animal;Ave que nao voa;MEDIO
+PIRAMIDE;Monumento;Construcao do antigo Egito;MEDIO
+PISCINA;Lazer;Lugar artificial cheio de agua para nadar;MEDIO
+PRESENTE;Objeto;Dado em datas especiais;MEDIO
+PULSEIRA;Acessorio;Usada no pulso;MEDIO
+QUADRO;Objeto;Pintura na parede;MEDIO
+RAPOSA;Animal;Canideo conhecido por sua esperteza;MEDIO
+RELAMPAGO;Natureza;Aparece durante tempestades;MEDIO
+RELOGIO;Objeto;Marca as horas;MEDIO
+SACOLA;Objeto;Serve para carregar compras;MEDIO
+SATELITE;Tecnologia;Orbita um planeta;MEDIO
+SEMAFORO;Transito;Controla o fluxo de veiculos;MEDIO
+SORVETE;Comida;Doce gelado servido em casquinhas;MEDIO
+SUBMARINO;Veiculo;Navega debaixo da agua;MEDIO
+TARTARUGA;Animal;Carrega a casa nas costas;MEDIO
+TECLADO;Tecnologia;Periferico usado para digitar;MEDIO
+TELEVISAO;Eletronico;Exibe imagens e sons;MEDIO
+TIGELA;Objeto;Prato fundo para sopas;MEDIO
+TOMATE;Comida;Fruto vermelho usado em saladas;MEDIO
+TORNADO;Natureza;Coluna de vento muito intensa;MEDIO
+TSUNAMI;Natureza;Grande onda causada por terremotos;MEDIO
+UMBIGO;Anatomia;Cicatriz na barriga;MEDIO
+VAMPIRO;Ficcao;Criatura que se alimenta de sangue;MEDIO
+VASSOURA;Objeto;Usada para varrer o chao;MEDIO
+VIOLAO;Instrumento;Tem seis cordas e e tocado com os dedos;MEDIO
+VIOLINO;Instrumento;Tocado com arco;MEDIO
+XADREZ;Jogo;Possui pecas como rei e rainha;MEDIO
+XICARA;Objeto;Recipiente com alca para tomar cafe;MEDIO
+ACUPUNTURA;Medicina;Terapia com agulhas finas;DIFICIL
+ANTIMATERIA;Fisica;Possui cargas opostas a materia comum;DIFICIL
+ANTROPOLOGIA;Ciencia;Estuda a humanidade e suas culturas;DIFICIL
+ARQUEOLOGIA;Ciencia;Estuda civilizacoes antigas;DIFICIL
+ARQUIPELAGO;Geografia;Conjunto de ilhas;DIFICIL
+ASTROFISICA;Ciencia;Fisica aplicada a astronomia;DIFICIL
+ASTRONAUTA;Profissao;Viaja para o espaco;DIFICIL
+AXOLOTE;Animal;Anfibio que regenera membros;DIFICIL
+BACTERIOFAGO;Biologia;Virus que ataca bacterias;DIFICIL
+BACTERIOLOGIA;Ciencia;Ramo que estuda as bacterias;DIFICIL
+BIBLIOTECA;Lugar;Empresta livros ao publico;DIFICIL
+BIOLUMINESCENCIA;Biologia;Capacidade de emitir luz;DIFICIL
+BIORREMEDIACAO;Ciencia;Uso de organismos para descontaminacao;DIFICIL
+BUMERANGUE;Objeto;Pode voltar ao ponto de origem;DIFICIL
+BURACO NEGRO;Astronomia;Regiao onde a gravidade atrai tudo;DIFICIL
+CAFEICULTURA;Agricultura;Cultivo do cafe;DIFICIL
+CALEIDOSCOPIO;Objeto;Cria desenhos coloridos com espelhos;DIFICIL
+CAMUFLAGEM;Biologia;Estrategia de se misturar ao ambiente;DIFICIL
+CATALISADOR;Quimica;Acelera uma reacao quimica;DIFICIL
+CHAMELEIRA;Ferramenta;Usada para mover lenha na lareira;DIFICIL
+CITOLOGIA;Ciencia;Estudo das celulas;DIFICIL
+CLAUSTROFOBIA;Psicologia;Medo de espacos fechados;DIFICIL
+CONSTELACAO;Astronomia;Conjunto aparente de estrelas;DIFICIL
+CRIPTOGRAFIA;Tecnologia;Protege informacoes por meio de codigos;DIFICIL
+CRIPTONITA;Ficcao;Fraqueza do Superman;DIFICIL
+CURLING;Esportes;Jogado no gelo com pedras e vassouras;DIFICIL
+CYBERPUNK;Cultura Pop;Subgenero de ficcao cientifica futurista;DIFICIL
+DACTILOSCOPIA;Ciencia;Identificacao por impressoes digitais;DIFICIL
+DECATLO;Esportes;Competicao com dez provas;DIFICIL
+DESFIBRILADOR;Equipamento;Usado para reanimacao cardiaca;DIFICIL
+DESOXIRRIBONUCLEICO;Biologia;O acido do DNA;DIFICIL
+ECOCARDIOGRAMA;Medicina;Exame do coracao por ultrassom;DIFICIL
+ECOSSISTEMA;Biologia;Comunidade de organismos e seu ambiente;DIFICIL
+ELETROMAGNETISMO;Fisica;Estuda as cargas eletricas e magneticas;DIFICIL
+ENDOCRINOLOGISTA;Profissao;Medico dos hormonios;DIFICIL
+ENGRENAGEM;Mecanica;Transmite movimento;DIFICIL
+EPICENTRO;Geologia;Ponto na superficie acima de um terremoto;DIFICIL
+EQUINOCIO;Astronomia;Dia e noite com duracao semelhante;DIFICIL
+ESCARAVELHO;Inseto;Besouro sagrado no antigo Egito;DIFICIL
+ESTALACTITE;Geologia;Forma-se no teto das cavernas;DIFICIL
+ESTENOGRAFIA;Tecnologia;Escrita rapida usando codigos;DIFICIL
+ESTETOSCOPIO;Instrumento;Usado para ouvir o coracao;DIFICIL
+ESTRATOSFERA;Atmosfera;Camada onde fica a camada de ozonio;DIFICIL
+EXTRATERRESTRE;Ficcao;Ser de fora do planeta Terra;DIFICIL
+FENECO;Animal;Raposa de grandes orelhas;DIFICIL
+FEUDALISMO;Historia;Sistema politico da Idade Media;DIFICIL
+FILOXERA;Biologia;Inseto que ataca videiras;DIFICIL
+FOTOSSINTESE;Biologia;Processo que produz alimento nas plantas;DIFICIL
+GASTROENTEROLOGISTA;Profissao;Medico do sistema digestivo;DIFICIL
+HELENISMO;Historia;Mistura da cultura grega com oriental;DIFICIL
+HELICENTRISMO;Astronomia;Teoria do Sol no centro do sistema;DIFICIL
+HELICOPTERO;Transporte;Pode decolar na vertical;DIFICIL
+HEMISFERIO;Geografia;Metade de uma esfera terrestre;DIFICIL
+HIDROELETRICA;Tecnologia;Gera energia com forca da agua;DIFICIL
+HIDROFOBICO;Quimica;Repele agua;DIFICIL
+HIEROGLIFO;Historia;Escrita sagrada do antigo Egito;DIFICIL
+HIPOPOTAMO;Animal;Grande mamifero africano;DIFICIL
+IDIOSSINCRASIA;Psicologia;Comportamento peculiar de um individuo;DIFICIL
+ILUMINISMO;Historia;Movimento intelectual do seculo dezoito;DIFICIL
+INCONSTITUCIONAL;Direito;Que vai contra a constituicao;DIFICIL
+INTERPLANETARIO;Astronomia;Entre diferentes planetas;DIFICIL
+ISOTOPO;Quimica;Atomos com mesmo numero atomico;DIFICIL
+JABUTICABA;Fruta;Nasce diretamente no tronco;DIFICIL
+KITESURF;Esportes;Usa uma pipa e uma prancha na agua;DIFICIL
+LEPIDOPTERO;Biologia;Ordem dos insetos como as borboletas;DIFICIL
+LIQUIDIFICADOR;Eletrodomestico;Aparelho que tritura alimentos;DIFICIL
+MACROMOLECULA;Quimica;Molecula de grande tamanho;DIFICIL
+MANDALORIANO;Cultura Pop;Cacador de recompensas de Star Wars;DIFICIL
+MANDRAGORA;Planta;Conhecida em lendas e mitologia;DIFICIL
+MANGANES;Quimica;Elemento quimico metalico;DIFICIL
+MESOPOTAMIA;Historia;Regiao entre os rios Tigre e Eufrates;DIFICIL
+METAMORFOSE;Biologia;Transformacao de alguns animais;DIFICIL
+METEORITO;Astronomia;Fragmento espacial que atinge a Terra;DIFICIL
+METEOROLOGIA;Ciencia;Estuda a atmosfera e previsao do tempo;DIFICIL
+MICROSCOPIO;Ciencia;Permite observar objetos minusculos;DIFICIL
+MITOCONDRIA;Biologia;Organela que produz energia para a celula;DIFICIL
+MULTIVERSO;Fisica;Conjunto de universos paralelos;DIFICIL
+NEANDERTHAL;Pre-Historia;Especie humana extinta;DIFICIL
+NEUROLOGISTA;Profissao;Medico especialista no sistema nervoso;DIFICIL
+OFTALMOLOGISTA;Profissao;Medico especialista nos olhos;DIFICIL
+OLIGARQUIA;Politica;Poder nas maos de poucos;DIFICIL
+ONIPRESENTE;Atributo;Estar em todos os lugares ao mesmo tempo;DIFICIL
+ORNITOLOGIA;Ciencia;Estudo das aves;DIFICIL
+ORNITORRINCO;Animal;Mamifero que bota ovos;DIFICIL
+OTORRINOLARINGOLOGISTA;Profissao;Medico especialista em ouvidos nariz e garganta;DIFICIL
+PALEONTOLOGIA;Ciencia;Estudo dos fosseis;DIFICIL
+PARADIGMA;Filosofia;Modelo ou padrao a ser seguido;DIFICIL
+PARADOXO;Filosofia;Parece contraditorio mas pode ser verdadeiro;DIFICIL
+PARALELEPIPEDO;Geometria;Solido com seis faces;DIFICIL
+PARALELOGRAMO;Geometria;Quadrilatero com lados opostos paralelos;DIFICIL
+PASTEURIZACAO;Processo;Aquecimento para eliminar bacterias;DIFICIL
+POLIMERO;Quimica;Macromolecula formada por monomeros;DIFICIL
+POLISSILABA;Gramatica;Palavra com quatro ou mais silabas;DIFICIL
+PRAGMATISMO;Filosofia;Pensamento voltado para a pratica;DIFICIL
+PROBABILIDADE;Matematica;Chance de um evento ocorrer;DIFICIL
+PSEUDONIMO;Literatura;Nome ficticio de um autor;DIFICIL
+PTERODACTILO;Pre-Historia;Reptil voador extinto;DIFICIL
+QUARENTENA;Saude;Isolamento preventivo de doencas;DIFICIL
+QUASAR;Astronomia;Objeto extremamente luminoso;DIFICIL
+QUIMIOTERAPIA;Medicina;Tratamento comum contra o cancer;DIFICIL
+RADIOASTRONOMIA;Astronomia;Estudo do cosmos via ondas de radio;DIFICIL
+RADIOATIVIDADE;Fisica;Emissao espontanea de radiacao;DIFICIL
+REFLEXOLOGIA;Terapia;Massagem em pontos dos pes e maos;DIFICIL
+RENASCIMENTO;Historia;Movimento cultural e artistico europeu;DIFICIL
+SIMBIOSE;Biologia;Relacao mutuamente vantajosa entre especies;DIFICIL
+SINGULARIDADE;Fisica;Ponto de densidade infinita num buraco negro;DIFICIL
+SKELETON;Esportes;Descida de treno de cabeca para baixo;DIFICIL
+SOLSTICIO;Astronomia;Marca inicio do verao ou inverno;DIFICIL
+SUPERCONDUTOR;Fisica;Material que conduz eletricidade sem resistencia;DIFICIL
+SUPERNOVA;Astronomia;Explosao de uma estrela massiva;DIFICIL
+TAQUION;Fisica;Particula hipotetica;DIFICIL
+TARDIS;Cultura Pop;Nave espacial e temporal do Doctor Who;DIFICIL
+TECNOCRACIA;Politica;Governo liderado por especialistas tecnicos;DIFICIL
+TELESCOPIO;Astronomia;Observa objetos distantes;DIFICIL
+TERMODINAMICA;Fisica;Estudo das relacoes entre calor e trabalho;DIFICIL
+TRIGONOMETRIA;Matematica;Estudo dos triangulos e seus angulos;DIFICIL
+ULTRASSONOGRAFIA;Medicina;Exame de imagem baseado em som;DIFICIL
+VENTRILOQUO;Arte;Artista que projeta a voz para um boneco;DIFICIL
+VOLDEMORT;Cultura Pop;O vilao que nao deve ser nomeado;DIFICIL
+XENOFOBIA;Sociedade;Aversao ou preconceito contra estrangeiros;DIFICIL
+XILOFONE;Instrumento;Percussao com laminas de madeira;DIFICIL
+ZOOLATRIA;Cultura;Culto ou adoracao a animais;DIFICIL
