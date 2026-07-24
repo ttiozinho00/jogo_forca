@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include <mmsystem.h>
 #include <time.h>
 #include <windows.h> /* Adicionado para PlaySound e Sleep */
 #include "../include/jogo.h"
@@ -12,6 +13,9 @@
 #include "../include/configuracao.h"
 #include "../include/conio_v3.2.4.h"
 #include "../include/graphics_v1.1.h"
+
+#define SOM_VITORIA     "assets/vitoria.wav"
+#define SOM_DERROTA     "assets/derrota.wav"
 
 #define COR_ESTRUTURA RGB(139, 69, 19)
 #define COR_CORPO RGB(255, 222, 173)
@@ -145,35 +149,13 @@ static void realizarChute() {
     }
 }
 
-/* Novas funções de animação adicionadas */
+/* Novas funÃ§Ãµes de animaÃ§Ã£o adicionadas */
 static void animarVitoria() {
-    int i;
-    int x;
-    int y;
-    
-    PlaySound(TEXT("../assets/vitoria.wav"), NULL, SND_ASYNC | SND_FILENAME);
-    
-    for (i = 0; i < 20; i++)
-    {
-        x = 400 + (rand() % 300);
-        y = 100 + (rand() % 300);
-        circulo(x, y, 15, RGB(rand() % 255, rand() % 255, rand() % 255));
-        Sleep(50);
-    }
+    PlaySound(TEXT(SOM_VITORIA), NULL, SND_ASYNC | SND_FILENAME);
 }
 
 static void animarDerrota() {
-    PlaySound(TEXT("../assets/derrota.wav"), NULL, SND_ASYNC | SND_FILENAME);
-    
-    circulo(600, 200, 50, RGB(255, 0, 0));
-    circulo(580, 190, 10, RGB(0, 0, 0));
-    circulo(620, 190, 10, RGB(0, 0, 0));
-    
-    linha(580, 230, 620, 230, RGB(0, 0, 0));
-    linha(580, 230, 570, 240, RGB(0, 0, 0));
-    linha(620, 230, 630, 240, RGB(0, 0, 0));
-    
-    Sleep(1000);
+    PlaySound(TEXT(SOM_DERROTA), NULL, SND_ASYNC | SND_FILENAME);
 }
 
 void iniciarJogo() {
@@ -207,13 +189,13 @@ void iniciarJogo() {
     if (ganhou()) {
         textcolor(LIGHTGREEN);
         printf("PARABENS! VOCE VENCEU EM %d SEGUNDOS!", tempoTotal);
-        animarVitoria(); /* Chamada da animação de vitória */
+        animarVitoria(); /* Chamada da animaÃ§Ã£o de vitÃ³ria */
         atualizarEstatisticas(1, erros);
     } else {
         textcolor(LIGHTRED);
         printf("GAME OVER! A palavra era: ");
         textcolor(YELLOW); printf("%s", palavraAtual.palavra);
-        animarDerrota(); /* Chamada da animação de derrota */
+        animarDerrota(); /* Chamada da animaÃ§Ã£o de derrota */
         atualizarEstatisticas(0, erros);
     }
 
