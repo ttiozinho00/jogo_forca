@@ -14,8 +14,8 @@
 #include "../include/conio_v3.2.4.h"
 #include "../include/graphics_v1.1.h"
 
-#define SOM_VITORIA     "assets/vitoria.wav"
-#define SOM_DERROTA     "assets/derrota.wav"
+#define SOM_VITORIA     "../assets/vitoria.wav"
+#define SOM_DERROTA     "../assets/derrota.wav"
 
 #define COR_ESTRUTURA RGB(139, 69, 19)
 #define COR_CORPO RGB(255, 222, 173)
