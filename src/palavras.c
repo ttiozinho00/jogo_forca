@@ -5,7 +5,7 @@
 #include <time.h>
 #include "../include/palavras.h"
 
-#define ARQUIVO_PALAVRAS "assets/palavras.txt"
+#define ARQUIVO_PALAVRAS "../assets/palavras.txt"
 
 int sortearPalavra(Palavra *p) {
     FILE *arquivo = fopen(ARQUIVO_PALAVRAS, "r");
@@ -57,5 +57,12 @@ int sortearPalavra(Palavra *p) {
     {
         strcpy(p->dica, token);
     }
+    
+    token = strtok(NULL, ";");
+    if (token != NULL)
+    {
+        strcpy(p->dificuldade, token);
+    }
+    
     return 1;
 }
