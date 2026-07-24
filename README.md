@@ -40,18 +40,26 @@ Um jogo da forca desenvolvido em **C**, executado em ambiente de console. O obje
 
 ```text
 jogo-forca/
+│
+├── assets/
+│   ├── palavras.txt      # Lista de palavras
+│   ├── vitoria.wav       # Som de vitória
+│   └── derrota.wav       # Som de derrota
+│
 ├── include/
-│   └── *.h
+│   └── *.h               # Arquivos de cabeçalho
+│
 ├── src/
-│   ├── configuracao.c
-│   ├── interface.c
-│   ├── jogo.c
-│   ├── main.c
-│   ├── palavras.c
-│   ├── ranking.c
+│   ├── main.c            # Ponto de entrada
+│   ├── jogo.c            # Lógica principal
+│   ├── interface.c       # Interface do usuário
+│   ├── palavras.c        # Manipulação das palavras
+│   ├── ranking.c         # Ranking de jogadores
+│   ├── configuracao.c    # Configurações do jogo
 │   ├── conio_v3.2.4.c
 │   ├── console_v1.5.5.c
 │   └── graphics_v1.1.c
+│
 └── README.md
 ```
 
