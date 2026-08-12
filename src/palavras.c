@@ -1,64 +1,84 @@
-/*palavreas.c*/
+/* palavras.c */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+
 #include "../include/palavras.h"
 
 #define ARQUIVO_PALAVRAS "../assets/palavras.txt"
 
-int sortearPalavra(Palavra *p) {
-    FILE *arquivo = fopen(ARQUIVO_PALAVRAS, "r");
+int sortearPalavra(Palavra *p)
+{
+    /* Declaração de todas as variáveis no início da função */
+    FILE *arquivo;
+    int totalPalavras;
+    char linha[200];
+    int indiceSorteado;
+    int i;
+    char *token;
+
+    /* Início das instruções executáveis */
+    arquivo = fopen(ARQUIVO_PALAVRAS, "r");
+    
     if (arquivo == NULL)
     {
-         return 0;
+        return 0;
     }
 
-    int totalPalavras = 0;
-    char linha[200];
+    totalPalavras = 0;
 
-    while (fgets(linha, sizeof(linha), arquivo) != NULL) {
+    while (fgets(linha, sizeof(linha), arquivo) != NULL)
+    {
         if (strlen(linha) > 2) 
         {
             totalPalavras++;
         }
     }
 
-    if (totalPalavras == 0) {
+    if (totalPalavras == 0)
+    {
         fclose(arquivo);
         return 0;
     }
 
     srand(time(NULL));
-    int indiceSorteado = rand() % totalPalavras;
+    indiceSorteado = rand() % totalPalavras;
     rewind(arquivo);
 
-    for (int i = 0; i <= indiceSorteado; i++) {
+    for (i = 0; i <= indiceSorteado; i++)
+    {
         fgets(linha, sizeof(linha), arquivo);
     }
+    
     fclose(arquivo);
 
     linha[strcspn(linha, "\n")] = 0;
 
-    char *token = strtok(linha, ";");
+    token = strtok(linha, ";");
+    
     if (token != NULL) 
     {
         strcpy(p->palavra, token);
     }
     
     token = strtok(NULL, ";");
+    
     if (token != NULL) 
     {
         strcpy(p->categoria, token);
     }
     
     token = strtok(NULL, ";");
+    
     if (token != NULL) 
     {
         strcpy(p->dica, token);
     }
     
     token = strtok(NULL, ";");
+    
     if (token != NULL)
     {
         strcpy(p->dificuldade, token);
