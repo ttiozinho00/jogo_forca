@@ -1,18 +1,19 @@
 /* jogo.c */
+#include <ctype.h>
+#include <mmsystem.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <ctype.h>
-#include <mmsystem.h>
 #include <time.h>
-#include <windows.h> /* Adicionado para PlaySound e Sleep */
-#include "../include/jogo.h"
-#include "../include/interface.h"
-#include "../include/palavras.h"
-#include "../include/ranking.h"
+#include <windows.h> 
+
 #include "../include/configuracao.h"
 #include "../include/conio_v3.2.4.h"
 #include "../include/graphics_v1.1.h"
+#include "../include/interface.h"
+#include "../include/jogo.h"
+#include "../include/palavras.h"
+#include "../include/ranking.h"
 
 #define SOM_VITORIA     "../assets/vitoria.wav"
 #define SOM_DERROTA     "../assets/derrota.wav"
@@ -27,31 +28,47 @@ static int tentativas;
 static int erros;
 static int usouDica;
 
-static int jaChutou(char letra) {
+static int jaChutou(char letra)
+{
     int i;
-    for (i = 0; i < tentativas; i++) {
-        if (chutes[i] == letra) return 1;
+    for (i = 0; i < tentativas; i++)
+    {
+        if (chutes[i] == letra)
+        {
+            return 1;
+        }
     }
     return 0;
 }
 
-static int letraExiste(char letra) {
+static int letraExiste(char letra)
+{
     size_t i;
-    for (i = 0; i < strlen(palavraAtual.palavra); i++) {
-        if (palavraAtual.palavra[i] == letra) return 1;
+    for (i = 0; i < strlen(palavraAtual.palavra); i++)
+    {
+        if (palavraAtual.palavra[i] == letra)
+        {
+            return 1;
+        }
     }
     return 0;
 }
 
-static int ganhou() {
+static int ganhou()
+{
     size_t i;
-    for (i = 0; i < strlen(palavraAtual.palavra); i++) {
-        if (!jaChutou(palavraAtual.palavra[i])) return 0;
+    for (i = 0; i < strlen(palavraAtual.palavra); i++)
+    {
+        if (!jaChutou(palavraAtual.palavra[i]))
+        {
+            return 0;
+        }
     }
     return 1;
 }
 
-static void renderizarForcaGrafica(int estagio) {
+static void renderizarForcaGrafica(int estagio)
+{
     int baseX = 520;
     int baseY = 280;
 
@@ -60,33 +77,71 @@ static void renderizarForcaGrafica(int estagio) {
     linha(baseX + 30, baseY - 180, baseX + 80, baseY - 180, COR_ESTRUTURA);
     linha(baseX + 80, baseY - 180, baseX + 80, baseY - 160, COR_CORDA);
 
-    if (estagio >= 1) circulo(baseX + 80, baseY - 150, 10, COR_CORPO);
-    if (estagio >= 2) linha(baseX + 80, baseY - 140, baseX + 80, baseY - 100, COR_CORPO);
-    if (estagio >= 3) linha(baseX + 80, baseY - 130, baseX + 65, baseY - 115, COR_CORPO);
-    if (estagio >= 4) linha(baseX + 80, baseY - 130, baseX + 95, baseY - 115, COR_CORPO);
-    if (estagio >= 5) linha(baseX + 80, baseY - 100, baseX + 65, baseY - 70, COR_CORPO);
-    if (estagio >= 6) linha(baseX + 80, baseY - 100, baseX + 95, baseY - 70, COR_CORPO);
+    if (estagio >= 1)
+    {
+        circulo(baseX + 80, baseY - 150, 10, COR_CORPO);
+    }
+    
+    if (estagio >= 2)
+    {
+        linha(baseX + 80, baseY - 140, baseX + 80, baseY - 100, COR_CORPO);
+    }
+    
+    if (estagio >= 3)
+    {
+        linha(baseX + 80, baseY - 130, baseX + 65, baseY - 115, COR_CORPO);
+    }
+    
+    if (estagio >= 4)
+    {
+        linha(baseX + 80, baseY - 130, baseX + 95, baseY - 115, COR_CORPO);
+    }
+    
+    if (estagio >= 5)
+    {
+        linha(baseX + 80, baseY - 100, baseX + 65, baseY - 70, COR_CORPO);
+    }
+    
+    if (estagio >= 6)
+    {
+        linha(baseX + 80, baseY - 100, baseX + 95, baseY - 70, COR_CORPO);
+    }
 }
 
-static void desenharForcaTela() {
+static void desenharForcaTela()
+{
+    int maxErrosPermitidos;
+    int estagioForca;
+    int i;
+    size_t j;
+
     limparTela();
-    int maxErrosPermitidos = obterMaxErros();
+    maxErrosPermitidos = obterMaxErros();
     
     textcolor(LIGHTCYAN);
-    gotoxy(2, 2); printf("=== JOGO DA FORCA (%s) ===", obterNomeDificuldade());
+    gotoxy(2, 2);
+    printf("=== JOGO DA FORCA (%s) ===", obterNomeDificuldade());
     
     textcolor(WHITE);
-    gotoxy(2, 4); printf("Categoria: ");
-    textcolor(LIGHTMAGENTA); printf("%s", palavraAtual.categoria);
+    gotoxy(2, 4);
+    printf("Categoria: ");
+    textcolor(LIGHTMAGENTA);
+    printf("%s", palavraAtual.categoria);
     
     textcolor(WHITE);
-    gotoxy(2, 5); printf("Vidas restantes: ");
-    textcolor(LIGHTRED); printf("%d", maxErrosPermitidos - erros);
+    gotoxy(2, 5);
+    printf("Vidas restantes: ");
+    textcolor(LIGHTRED);
+    printf("%d", maxErrosPermitidos - erros);
 
     textcolor(YELLOW);
-    gotoxy(2, 7); printf("Letras erradas: ");
-    for (int i = 0; i < tentativas; i++) {
-        if (!letraExiste(chutes[i])) {
+    gotoxy(2, 7);
+    printf("Letras erradas: ");
+    
+    for (i = 0; i < tentativas; i++)
+    {
+        if (!letraExiste(chutes[i]))
+        {
             printf("%c ", chutes[i]);
         }
     }
@@ -94,107 +149,146 @@ static void desenharForcaTela() {
     gotoxy(2, 10);
     textcolor(WHITE);
     
-    size_t i;
-    for (i = 0; i < strlen(palavraAtual.palavra); i++) {
-        if (jaChutou(palavraAtual.palavra[i])) {
-            printf("%c ", palavraAtual.palavra[i]);
-        } else {
+    for (j = 0; j < strlen(palavraAtual.palavra); j++)
+    {
+        if (jaChutou(palavraAtual.palavra[j]))
+        {
+            printf("%c ", palavraAtual.palavra[j]);
+        }
+        else
+        {
             printf("_ ");
         }
     }
     
-    if (usouDica) {
+    if (usouDica)
+    {
         gotoxy(2, 13);
         textcolor(LIGHTBLUE);
         printf("Dica: %s", palavraAtual.dica);
     }
 
-    int estagioForca = (erros * 6) / maxErrosPermitidos;
-    if (estagioForca > 6) estagioForca = 6;
+    estagioForca = (erros * 6) / maxErrosPermitidos;
+    
+    if (estagioForca > 6)
+    {
+        estagioForca = 6;
+    }
     
     renderizarForcaGrafica(estagioForca);
 }
 
-static void realizarChute() {
+static void realizarChute()
+{
     gotoxy(2, 15);
     textcolor(WHITE);
     printf("Digite uma letra (ou [?] para Dica): ");
     
     char letra = getch(); 
     
-    if (letra == '?') {
-        if (usouDica) {
-            gotoxy(2, 17); textcolor(YELLOW); printf("Voce ja usou a sua dica!");
+    if (letra == '?')
+    {
+        if (usouDica)
+        {
+            gotoxy(2, 17);
+            textcolor(YELLOW);
+            printf("Você já usou a sua dica!");
             getch();
-        } else {
+        }
+        else
+        {
             usouDica = 1;
         }
+        
         return;
     }
 
     letra = toupper(letra);
 
-    if (!isalpha(letra)) return;
+    if (!isalpha(letra))
+    {
+        return;
+    }
 
-    if (jaChutou(letra)) {
-        gotoxy(2, 17); textcolor(YELLOW); printf("Letra '%c' ja testada!", letra);
+    if (jaChutou(letra))
+    {
+        gotoxy(2, 17);
+        textcolor(YELLOW);
+        printf("Letra '%c' já testada!", letra);
         getch();
+        
         return;
     }
 
     chutes[tentativas++] = letra;
 
-    if (!letraExiste(letra)) {
+    if (!letraExiste(letra))
+    {
         erros++;
     }
 }
 
-/* Novas funções de animação adicionadas */
-static void animarVitoria() {
+static void animarVitoria()
+{
     PlaySound(TEXT(SOM_VITORIA), NULL, SND_ASYNC | SND_FILENAME);
 }
 
-static void animarDerrota() {
+static void animarDerrota()
+{
     PlaySound(TEXT(SOM_DERROTA), NULL, SND_ASYNC | SND_FILENAME);
 }
 
-void iniciarJogo() {
+void iniciarJogo()
+{
+    time_t tempoInicio;
+    time_t tempoFim;
+    int maxErrosPermitidos;
+    int tempoTotal;
+
     tentativas = 0;
     erros = 0;
     usouDica = 0;
     memset(chutes, 0, sizeof(chutes));
 
-    if (!sortearPalavra(&palavraAtual)) {
+    if (!sortearPalavra(&palavraAtual))
+    {
         limparTela();
         textcolor(LIGHTRED);
-        printf("Erro: Ficheiro 'palavras.txt' nao encontrado ou vazio!\n");
+        printf("Erro: Ficheiro 'palavras.txt' não encontrado ou vazio!\n");
         getch();
+        
         return;
     }
 
-    time_t tempoInicio = time(NULL);
-    int maxErrosPermitidos = obterMaxErros();
+    tempoInicio = time(NULL);
+    maxErrosPermitidos = obterMaxErros();
 
-    while (erros < maxErrosPermitidos && !ganhou()) {
+    while (erros < maxErrosPermitidos && !ganhou())
+    {
         desenharForcaTela();
         realizarChute();
     }
 
-    time_t tempoFim = time(NULL);
-    int tempoTotal = (int)difftime(tempoFim, tempoInicio);
+    tempoFim = time(NULL);
+    tempoTotal = (int)difftime(tempoFim, tempoInicio);
 
     desenharForcaTela();
 
     gotoxy(2, 17);
-    if (ganhou()) {
+    
+    if (ganhou())
+    {
         textcolor(LIGHTGREEN);
-        printf("PARABENS! VOCE VENCEU EM %d SEGUNDOS!", tempoTotal);
+        printf("PARABÉNS! VOCÊ VENCEU EM %d SEGUNDOS!", tempoTotal);
         animarVitoria(); /* Chamada da animação de vitória */
         atualizarEstatisticas(1, erros);
-    } else {
+    }
+    else
+    {
         textcolor(LIGHTRED);
         printf("GAME OVER! A palavra era: ");
-        textcolor(YELLOW); printf("%s", palavraAtual.palavra);
+        textcolor(YELLOW);
+        printf("%s", palavraAtual.palavra);
         animarDerrota(); /* Chamada da animação de derrota */
         atualizarEstatisticas(0, erros);
     }
