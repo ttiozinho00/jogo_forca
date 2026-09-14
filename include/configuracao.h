@@ -7,8 +7,8 @@ typedef enum {
     DIFICULDADE_DIFICIL
 } Dificuldade;
 
-void ajustarDificuldade();
-int obterMaxErros();
-const char* obterNomeDificuldade();
+void ajustarDificuldade(void);
+int obterMaxErros(void);
+const char *obterNomeDificuldade(void);
 
 #endif

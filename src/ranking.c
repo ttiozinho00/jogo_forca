@@ -79,8 +79,12 @@ void atualizarEstatisticas(int venceu, int erros) {
 void exibirRanking() 
 {
 	Jogador *lista = NULL;
-    int total = 0,i,j;
+    int total = 0;
+    int i;
+    int j;
     Jogador temp;
+    Jogador aux;
+	FILE *arquivo;
 	
     limparTela();
     textcolor(LIGHTMAGENTA);
@@ -88,7 +92,7 @@ void exibirRanking()
     gotoxy(5, 3); printf("               RANKING GERAL DE JOGADORES           ");
     gotoxy(5, 4); printf("====================================================");
 
-    FILE *arquivo = fopen(ARQUIVO_RANKING, "rb");
+    arquivo = fopen(ARQUIVO_RANKING, "rb");
     if (arquivo == NULL) 
 	{
         gotoxy(5, 6); textcolor(YELLOW);
@@ -109,7 +113,7 @@ void exibirRanking()
     for ( i = 0; i < total - 1; i++) {
         for ( j = i + 1; j < total; j++) {
             if (lista[i].pontuacao < lista[j].pontuacao) {
-                Jogador aux = lista[i];
+                aux = lista[i];
                 lista[i] = lista[j];
                 lista[j] = aux;
             }

@@ -8,6 +8,6 @@ typedef struct {
     char dificuldade[50];
 } Palavra;
 
-int sortearPalavra(Palavra *p);
+int sortearPalavra(Palavra *p,const char dificuldadeEscolhida[]);
 
 #endif

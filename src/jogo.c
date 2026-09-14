@@ -1,11 +1,18 @@
 /* jogo.c */
 #include <ctype.h>
+<<<<<<< HEAD
 #include <mmsystem.h>
+=======
+>>>>>>> d9386fc (atualizado)
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
 #include <windows.h> 
+<<<<<<< HEAD
+=======
+#include <mmsystem.h>
+>>>>>>> d9386fc (atualizado)
 
 #include "../include/configuracao.h"
 #include "../include/conio_v3.2.4.h"
@@ -15,8 +22,13 @@
 #include "../include/palavras.h"
 #include "../include/ranking.h"
 
+<<<<<<< HEAD
 #define SOM_VITORIA     "../assets/vitoria.wav"
 #define SOM_DERROTA     "../assets/derrota.wav"
+=======
+#define SOM_VITORIA     "./assets/vitoria.wav"
+#define SOM_DERROTA     "./assets/derrota.wav"
+>>>>>>> d9386fc (atualizado)
 
 #define COR_ESTRUTURA RGB(139, 69, 19)
 #define COR_CORPO RGB(255, 222, 173)
@@ -180,11 +192,15 @@ static void desenharForcaTela()
 
 static void realizarChute()
 {
+<<<<<<< HEAD
+=======
+	char letra;
+>>>>>>> d9386fc (atualizado)
     gotoxy(2, 15);
     textcolor(WHITE);
     printf("Digite uma letra (ou [?] para Dica): ");
     
-    char letra = getch(); 
+    letra = getch(); 
     
     if (letra == '?')
     {
@@ -192,7 +208,11 @@ static void realizarChute()
         {
             gotoxy(2, 17);
             textcolor(YELLOW);
+<<<<<<< HEAD
             printf("VocÃª jÃ¡ usou a sua dica!");
+=======
+            printf("Vocˆ j  usou a sua dica!");
+>>>>>>> d9386fc (atualizado)
             getch();
         }
         else
@@ -214,7 +234,11 @@ static void realizarChute()
     {
         gotoxy(2, 17);
         textcolor(YELLOW);
+<<<<<<< HEAD
         printf("Letra '%c' jÃ¡ testada!", letra);
+=======
+        printf("Letra '%c' j  testada!", letra);
+>>>>>>> d9386fc (atualizado)
         getch();
         
         return;
@@ -250,11 +274,19 @@ void iniciarJogo()
     usouDica = 0;
     memset(chutes, 0, sizeof(chutes));
 
+<<<<<<< HEAD
     if (!sortearPalavra(&palavraAtual))
     {
         limparTela();
         textcolor(LIGHTRED);
         printf("Erro: Ficheiro 'palavras.txt' nÃ£o encontrado ou vazio!\n");
+=======
+    if (!sortearPalavra(&palavraAtual,obterNomeDificuldade()))
+    {
+        limparTela();
+        textcolor(LIGHTRED);
+        printf("Erro: Ficheiro 'palavras.txt' n'o encontrado ou vazio!\n");
+>>>>>>> d9386fc (atualizado)
         getch();
         
         return;
@@ -279,8 +311,13 @@ void iniciarJogo()
     if (ganhou())
     {
         textcolor(LIGHTGREEN);
+<<<<<<< HEAD
         printf("PARABÃ‰NS! VOCÃŠ VENCEU EM %d SEGUNDOS!", tempoTotal);
         animarVitoria(); /* Chamada da animaÃ§Ã£o de vitÃ³ria */
+=======
+        printf("PARABNS! VOCÒ VENCEU EM %d SEGUNDOS!", tempoTotal);
+        animarVitoria(); /* Chamada da anima×'o de vit«ria */
+>>>>>>> d9386fc (atualizado)
         atualizarEstatisticas(1, erros);
     }
     else
@@ -289,7 +326,11 @@ void iniciarJogo()
         printf("GAME OVER! A palavra era: ");
         textcolor(YELLOW);
         printf("%s", palavraAtual.palavra);
+<<<<<<< HEAD
         animarDerrota(); /* Chamada da animaÃ§Ã£o de derrota */
+=======
+        animarDerrota(); /* Chamada da anima×'o de derrota */
+>>>>>>> d9386fc (atualizado)
         atualizarEstatisticas(0, erros);
     }
 
