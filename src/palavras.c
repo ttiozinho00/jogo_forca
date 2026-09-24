@@ -7,61 +7,14 @@
 
 #include "../include/palavras.h"
 
-<<<<<<< HEAD
+/* Verifica o caminho correto de acordo com a pasta onde o executável é gerado (build) */
 #define ARQUIVO_PALAVRAS "../assets/palavras.txt"
-
-int sortearPalavra(Palavra *p)
-{
-    /* Declaração de todas as variáveis no início da função */
-    FILE *arquivo;
-    int totalPalavras;
-    char linha[200];
-    int indiceSorteado;
-    int i;
-    char *token;
-
-    /* Início das instruções executáveis */
-    arquivo = fopen(ARQUIVO_PALAVRAS, "r");
-    
-    if (arquivo == NULL)
-    {
-        return 0;
-    }
-
-    totalPalavras = 0;
-
-    while (fgets(linha, sizeof(linha), arquivo) != NULL)
-    {
-        if (strlen(linha) > 2) 
-        {
-            totalPalavras++;
-        }
-    }
-
-    if (totalPalavras == 0)
-    {
-        fclose(arquivo);
-        return 0;
-    }
-
-    srand(time(NULL));
-    indiceSorteado = rand() % totalPalavras;
-    rewind(arquivo);
-
-    for (i = 0; i <= indiceSorteado; i++)
-    {
-        fgets(linha, sizeof(linha), arquivo);
-    }
-    
-=======
-#define ARQUIVO_PALAVRAS "./assets/palavras.txt"
 
 int sortearPalavra(Palavra *p, const char dificuldadeEscolhida[])
 {
     FILE *arquivo;
-    int totalPalavras;
-    int indiceSorteado;
-    int contador;
+    int totalPalavras = 0;
+    int indiceSorteado, contador;
     char linha[200];
     char linhaEscolhida[200];
     char *token;
@@ -73,27 +26,23 @@ int sortearPalavra(Palavra *p, const char dificuldadeEscolhida[])
         return 0;
     }
 
-    totalPalavras = 0;
-
+    /* Primeira passagem: Conta quantas palavras existem com a dificuldade escolhida */
     while (fgets(linha, sizeof(linha), arquivo) != NULL)
     {
-        /* Remove o ENTER */
-        linha[strcspn(linha, "\n")] = '\0';
+        linha[strcspn(linha, "\n")] = '\0'; /* Remove o ENTER */
 
         if (strlen(linha) > 2)
         {
-          
-            token = strtok(linha, ";");
+            /* Usamos linhaEscolhida para preservar a string original */
+            strcpy(linhaEscolhida, linha);
+            token = strtok(linhaEscolhida, ";");
             token = strtok(NULL, ";");
             token = strtok(NULL, ";");
-            token = strtok(NULL, ";");
+            token = strtok(NULL, ";"); /* 4º token é a Dificuldade */
 
-            if (token != NULL)
+            if (token != NULL && strcmp(token, dificuldadeEscolhida) == 0)
             {
-                if (strcmp(token, dificuldadeEscolhida) == 0)
-                {
-                    totalPalavras++;
-                }
+                totalPalavras++;
             }
         }
     }
@@ -103,9 +52,12 @@ int sortearPalavra(Palavra *p, const char dificuldadeEscolhida[])
         fclose(arquivo);
         return 0;
     }
+
+    /* Sorteia o índice com base apenas nas palavras válidas */
     indiceSorteado = rand() % totalPalavras;
     rewind(arquivo);
 
+    /* Segunda passagem: Percorre até encontrar a palavra sorteada */
     contador = 0;
     while (fgets(linha, sizeof(linha), arquivo) != NULL)
     {
@@ -113,96 +65,40 @@ int sortearPalavra(Palavra *p, const char dificuldadeEscolhida[])
 
         if (strlen(linha) > 2)
         {
-
             strcpy(linhaEscolhida, linha);
-
             token = strtok(linhaEscolhida, ";");
             token = strtok(NULL, ";");
             token = strtok(NULL, ";");
             token = strtok(NULL, ";");
 
-            if (token != NULL)
+            if (token != NULL && strcmp(token, dificuldadeEscolhida) == 0)
             {
-                if (strcmp(token, dificuldadeEscolhida) == 0)
+                if (contador == indiceSorteado)
                 {
-                    if (contador == indiceSorteado)
-                    {
-                        break;
-                    }
-
-                    contador++;
+                    break; /* Encontramos a linha certa, ela fica guardada na variável 'linha' */
                 }
+                contador++;
             }
         }
     }
 
->>>>>>> d9386fc (atualizado)
     fclose(arquivo);
 
     /*
-     * Agora 'linha' cont�m a palavra sorteada.
-     *
-     * Formato:
-     * PALAVRA;CATEGORIA;DICA;DIFICULDADE
+     * Formato: PALAVRA;CATEGORIA;DICA;DIFICULDADE
+     * Agora extraímos os dados finais da 'linha' intacta para a struct
      */
-
     token = strtok(linha, ";");
-
-    if (token != NULL)
-    {
-        strcpy(p->palavra, token);
-    }
-
-<<<<<<< HEAD
-    token = strtok(linha, ";");
-    
-    if (token != NULL) 
-    {
-        strcpy(p->palavra, token);
-    }
-    
-    token = strtok(NULL, ";");
-    
-    if (token != NULL) 
-    {
-        strcpy(p->categoria, token);
-    }
-    
-    token = strtok(NULL, ";");
-    
-    if (token != NULL) 
-    {
-        strcpy(p->dica, token);
-    }
-    
-    token = strtok(NULL, ";");
-    
-=======
-    token = strtok(NULL, ";");
-
-    if (token != NULL)
-    {
-        strcpy(p->categoria, token);
-    }
+    if (token != NULL) strcpy(p->palavra, token);
 
     token = strtok(NULL, ";");
-
-    if (token != NULL)
-    {
-        strcpy(p->dica, token);
-    }
+    if (token != NULL) strcpy(p->categoria, token);
 
     token = strtok(NULL, ";");
+    if (token != NULL) strcpy(p->dica, token);
 
->>>>>>> d9386fc (atualizado)
-    if (token != NULL)
-    {
-        strcpy(p->dificuldade, token);
-    }
-<<<<<<< HEAD
-    
-=======
+    token = strtok(NULL, ";");
+    if (token != NULL) strcpy(p->dificuldade, token);
 
->>>>>>> d9386fc (atualizado)
     return 1;
 }
